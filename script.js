@@ -2,29 +2,36 @@ const donators = [
   {
       name: 'Esteban',
       points: 11,
-      imageUrl: 'fotos/esteban2.png'
+      imageUrl: 'fotos/esteban2.png',
+      sub: false
   },
   {
       name: 'David_Tp',
       points: 5,
-      imageUrl: 'fotos/david2.png'
+      imageUrl: 'fotos/david2.png',
+      sub: false
   },
   {
       name: 'Vicky',
       points: 4,
-      imageUrl: 'fotos/vicky2.png'
+      imageUrl: 'fotos/vicky2.png',
+      sub: true
   },
   {
       name: 'Fanny Ramirez',
       points: 3,
-      imageUrl: 'fotos/fanny2.png'
+      imageUrl: 'fotos/fanny2.png',
+      sub: false
   },
   {
       name: 'Yuri Viviana',
       points: 3,
-      imageUrl: 'fotos/yuri2.png'
+      imageUrl: 'fotos/yuri2.png',
+      sub: false
   }
 ];
+
+
 
 document.addEventListener('DOMContentLoaded', () => {
   donators.forEach((donator, index) => {
@@ -32,6 +39,11 @@ document.addEventListener('DOMContentLoaded', () => {
       donatorElement.querySelector('.profile-pic').src = donator.imageUrl;
       donatorElement.querySelector('.name').textContent = donator.name;
       donatorElement.querySelector('.points').textContent = `${donator.points} mvp`;
+      
+if (donator.sub == true) {
+  donatorElement.querySelector('.name').classList.add('sub');
+  donatorElement.querySelector('.name').textContent = donator.name + ' ⭐';
+}
   });
 });
 
