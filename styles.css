@@ -149,3 +149,10 @@ body {
 .h2Top {
   text-align: center;
 }
+
+.sub {
+  background: #fff69ee0;
+  border-radius: 3px;
+  padding: 2px;
+  border: 2px solid rgb(24 20 2 / 1%);
+}
