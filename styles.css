@@ -1,0 +1,151 @@
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #f5f5f5;
+  margin: 0;
+  overflow: hidden;
+}
+
+.container {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+}
+
+.card-container {
+  perspective: 1000px;
+}
+
+.card {
+  width: 300px;
+  height: 500px;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card .front, .card .back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.card .front {
+  background-color: #ffffff;
+}
+
+.card .back {
+  background-color: #333333;
+  color: #ffffff;
+  transform: rotateY(180deg);
+}
+
+.donator {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.donator img.profile-pic {
+  width: 65px;
+  height: 65px;
+  border-radius: 20%;
+  margin-right: 15px;
+}
+
+.donator .details {
+  text-align: left;
+}
+
+.donator .name {
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.donator .points {
+  font-size: 14px;
+  color: #666666;
+  display: flex;
+}
+
+.flip-button {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.flip-button img {
+  width: 30px;
+  height: 30px;
+}
+
+.flipped .card {
+  transform: rotateY(180deg);
+}
+.menu {
+  width: 20px;
+  height: 20px;
+}
+
+.card .back {
+  background-color: #333333;
+  color: #ffffff;
+  transform: rotateY(180deg);
+  overflow-y: auto; /* Habilita el scrollbar vertical */
+  padding: 20px; /* Ajusta el padding según sea necesario */
+  box-sizing: border-box; /* Asegura que el padding no afecte al tamaño total */
+  max-height: 100%; /* Establece una altura máxima para la tarjeta trasera */
+}
+
+.card .back h2 {
+  margin-bottom: 15px; /* Espacio entre el título y el primer párrafo */
+}
+
+.h2{
+  position: absolute;
+}
+
+.card .back p {
+  margin-bottom: 0px; /* Espacio entre párrafos */
+  line-height: 1.2; /* Espaciado entre líneas */
+}
+
+/* Personalización del scrollbar */
+.card .back::-webkit-scrollbar {
+  width: 5px; /* Ancho del scrollbar */
+  background-color: #f5f5f5; /* Color de fondo del scrollbar */
+  padding: 5px;
+}
+
+.card .back::-webkit-scrollbar-thumb {
+  background-color: #666666; /* Color del thumb (barra deslizante) */
+  border-radius: 5px; /* Borde redondeado del thumb */
+}
+
+.card .back::-webkit-scrollbar-track {
+  background-color: #f5f5f5; /* Color de la pista (fondo del scrollbar) */
+}
+
+.h2Top {
+  text-align: center;
+}
