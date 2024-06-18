@@ -6,16 +6,17 @@ const donators = [
       sub: false
   },
   {
+      name: 'Vicky',
+      points: 7,
+      imageUrl: 'fotos/vicky2.png',
+      sub: true
+
+  },
+  {
       name: 'David_Tp',
       points: 5,
       imageUrl: 'fotos/david2.png',
       sub: false
-  },
-  {
-      name: 'Vicky',
-      points: 4,
-      imageUrl: 'fotos/vicky2.png',
-      sub: true
   },
   {
       name: 'Fanny Ramirez',
