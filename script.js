@@ -6,28 +6,27 @@ const donators = [
       sub: false
   },
   {
-      name: 'Vicky',
-      points: 7,
-      imageUrl: 'fotos/vicky2.png',
+    name: 'Vicky',
+    points: 8,
+    imageUrl: 'fotos/vicky2.png',
+    sub: true
+  },
+  { 
+    name: 'David_Tp',
+    points: 5,
+    imageUrl: 'fotos/david2.png',
+    sub: false
+  },
+  {
+      name: 'Jando',
+      points: 4,
+      imageUrl: 'fotos/jando2.png',
       sub: true
-
   },
   {
-      name: 'David_Tp',
-      points: 5,
-      imageUrl: 'fotos/david2.png',
-      sub: false
-  },
-  {
-      name: 'Fanny Ramirez',
+      name: 'Yuri - Fanny - Robert',
       points: 3,
-      imageUrl: 'fotos/fanny2.png',
-      sub: false
-  },
-  {
-      name: 'Yuri Viviana',
-      points: 3,
-      imageUrl: 'fotos/yuri2.png',
+      imageUrl: 'fotos/all2.png',
       sub: false
   }
 ];
