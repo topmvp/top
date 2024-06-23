@@ -24,9 +24,9 @@ const donators = [
     sub: true
   },
   {
-    name: 'David_Tp - Tini Tini',
-    points: 5,
-    imageUrl: 'fotos/all2.png',
+    name: 'David_Tp',
+    points: 7,
+    imageUrl: 'fotos/david2.png',
     sub: false
   }
 ];
