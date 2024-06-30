@@ -1,25 +1,25 @@
 const donators = [
   {
-      name: 'Esteban',
-      points: 14,
-      imageUrl: 'fotos/esteban2.png',
-      sub: false
-  },
-  {
     name: 'Jando',
-    points: 11,
+    points: 17,
     imageUrl: 'fotos/jando2.png',
     sub: true
   },
+  {
+      name: 'Esteban',
+      points: 15,
+      imageUrl: 'fotos/esteban2.png',
+      sub: false
+  },
   { 
     name: 'Vicky',
-    points: 9,
+    points: 10,
     imageUrl: 'fotos/vicky2.png',
     sub: true
   },
   {
     name: 'Martin lb',
-    points: 9,
+    points: 10,
     imageUrl: 'fotos/martinlb2.png',
     sub: true
   },
